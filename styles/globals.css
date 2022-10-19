@@ -13,8 +13,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans', sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+  background: rgb(31, 31, 31);
+  color: rgb(250, 250, 250);
 }
 
 

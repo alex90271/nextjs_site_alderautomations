@@ -21,6 +21,11 @@ export default function Home() {
           <li>Design, Build, and Deploy your website</li>
           <li>Implement automated data managment, able to provide meaningful insight</li>
         </ul>
+        <div>
+          <button>Try it out</button>
+          <button>Contact us</button>
+        </div>
+      
       </main>
     </div>
   )
