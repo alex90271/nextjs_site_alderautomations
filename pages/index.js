@@ -13,19 +13,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <h1 className={styles.gradient}>Hello, my name is Alex</h1>
+        <div className={styles.grid}><div className={styles.centercard}>
+      <h1 >Hello, my name is Alex</h1>
       <h1>Full stack software developer</h1>
       <p>Bringing your next idea alive with innovative software</p>
-        <ul>
+        </div>
+        <div className={styles.centercard}><ul>
           <li>Custom software</li>
           <li>Design, Build, and Deploy your website</li>
           <li>Implement automated data managment, able to provide meaningful insight</li>
         </ul>
-        <div>
-          <button>Try it out</button>
-          <button>Contact us</button>
         </div>
-      
+        </div>
       </main>
     </div>
   )

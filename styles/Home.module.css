@@ -66,11 +66,11 @@
 }
 
 .grid {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  grid-template-columns: 800px 400px;
 }
 
 .card {
@@ -83,6 +83,24 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+}
+
+.centercard {
+  background: rgb(34,193,195);
+  background: linear-gradient(200deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+  padding: 50px;
+  margin: 50px;
+  height: 500px;
+  border-radius: 15px;
+  animation: gradient 60s infinite normal ease-in;
+}
+  @keyframes gradient {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
 }
 
 .card:hover,
