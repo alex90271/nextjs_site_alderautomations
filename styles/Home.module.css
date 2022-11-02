@@ -70,7 +70,22 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  grid-template-columns: 800px 400px;
+}
+
+.grid2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -85,22 +100,61 @@
   max-width: 300px;
 }
 
-.centercard {
+.centercard1 {
   background: rgb(34,193,195);
   background: linear-gradient(200deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
   padding: 50px;
   margin: 50px;
   height: 500px;
-  border-radius: 15px;
-  animation: gradient 60s infinite normal ease-in;
+  min-width: 500px;
+  border-radius: 25px;
+  animation: gradient1 60s infinite normal ease-in;
 }
-  @keyframes gradient {
+.centercard2 {
+  background: rgb(34,193,195);
+  background: linear-gradient(200deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+  padding: 50px;
+  margin: 50px;
+  height: 500px;
+  min-width: 500px;
+  border-radius: 25px;
+  animation: gradient2 60s infinite normal ease-in;
+}
+.centercard3 {
+  background: rgb(34,193,195);
+  background: linear-gradient(200deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+  padding: 50px;
+  margin: 50px;
+  height: 500px;
+  min-width: 500px;
+  border-radius: 25px;
+  animation: gradient3 60s infinite normal ease-in;
+}
+
+
+  @keyframes gradient1 {
     from {
       -webkit-filter: hue-rotate(0deg);
     }
     to {
-      -webkit-filter: hue-rotate(-360deg);
+      -webkit-filter: hue-rotate(360deg);
     }
+}
+@keyframes gradient2 {
+  from {
+    -webkit-filter: hue-rotate(180deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-180deg);
+  }
+}
+@keyframes gradient3 {
+  from {
+    -webkit-filter: hue-rotate(90deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-270deg);
+  }
 }
 
 .card:hover,
@@ -145,23 +199,3 @@
     filter: invert(1);
   }
 }
-
-.gradient {
-	letter-spacing: 2px;
-	text-align: center;
-	color: #f35626;
-	background-image: -webkit-linear-gradient(160deg, #f35626, #feab3a);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 60s infinite linear;
-}
-
-@keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-
